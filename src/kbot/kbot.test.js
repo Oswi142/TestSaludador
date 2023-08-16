@@ -1,4 +1,4 @@
-const Kbot = require("./Kbot");
+const Kbot = require("./kbot")
 
     describe("Saludador", () => {
 
