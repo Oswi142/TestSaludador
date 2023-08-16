@@ -41,6 +41,11 @@ const Kbot = require("./Kbot");
         const mensaje = kbot.saludar("Luisa", 21);
         expect(mensaje).toEqual("Buenas noches Luisa");
       });
-  
+
+      it("debería saludar en la noche en inglés", () => {
+        const kbot = new Kbot("EN");
+        const mensaje = kbot.saludar("Luis", 23);
+        expect(mensaje).toEqual("Good evening Luis");
+      });
     });
 
